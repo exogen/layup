@@ -1,15 +1,16 @@
 {
   "name": "layup",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["react", "css", "grid", "layout"],
+  "author": "Brian Beck <exogen@gmail.com>",
+  "license": "MIT",
   "engines": {
     "node": ">=6.0.0",
     "npm": ">=5.3.0"
   },
-  "main": "index.html",
+  "main": "dist-cjs/index.js",
+  "module": "dist-esm/index.js",
   "scripts": {
     "build:dist-cjs": "cross-env BABEL_ENV=cjs babel src --out-dir dist-cjs",
     "build:dist-esm": "cross-env BABEL_ENV=esm babel src --out-dir dist-esm",
@@ -18,11 +19,11 @@
     "format": "prettier --write \"**/*.{js,json,md}\" \".*rc\"",
     "deploy": "now deploy dist --static --public"
   },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-live": "^1.9.2",
-    "styled-components": "^3.1.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -34,7 +35,11 @@
     "glamor": "^2.20.40",
     "parcel-bundler": "^1.6.1",
     "prettier": "^1.10.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-live": "^1.9.2",
     "rimraf": "^2.6.2",
-    "serve": "^6.4.10"
+    "serve": "^6.4.10",
+    "styled-components": "^3.1.6"
   }
 }

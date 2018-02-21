@@ -59,8 +59,8 @@ const foodLayout = {
 * You shouldn’t have to add individual styling properties (like `mb` or
   `marginBottom`) to every component you write just because there’s different
   whitespace around them sometimes.
-* Using the `margin` property for layout is often arbitrary anyway, and is
-  antiquated for UI layout. It rarely makes sense for elements to own the
+* Using the `margin` property for layout is often arbitrary and doesn’t make
+  sense for UI layout. Only in rare circumstances should UI elements own the
   whitespace separating them.
 
 ### What’s wrong with margin?
@@ -89,13 +89,14 @@ what other page elements are nearby. But mostly, it’s arbitrary.
 
 But why do the individual components need to “own” the whitespace between them?
 What if they’re used in other contexts that call for different spacing? Are we
-just supposed to override their margins every time? Would’t it be nice if the
+just supposed to override their margins every time? Wouldn’t it be nice if the
 component’s styles stopped at its actual borders, making it easier to use in
 other places?
 
 CSS Grid offers a new solution to this problem. In this case, the container
-element can define the spacing from the top-down. The children don’t need to
-concern themselves with spacing or even know about it!
+element can define the spacing between its children. It’s an inversion of the
+usual method of controlling whitespace, and one that (in my opinion) makes more
+sense. The children don’t need to concern themselves with spacing.
 
 ```css
 .PageActions {
@@ -129,17 +130,18 @@ so:
     10px
     [google] auto
     15px
-    [separator] auto
+    [orSeparator] auto
     15px
     [email] auto
     30px
-    [signin];
+    [signIn];
 }
 ```
 
 Then the individual components just need to declare their row name to match. The
 container element is then free to arrange them differently (even showing them in
-a different order) at different breakpoints.
+a different order) at different breakpoints. This library is a helper for doing
+exactly that!
 
 ## Usage
 
