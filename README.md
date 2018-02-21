@@ -150,10 +150,10 @@ so:
 }
 ```
 
-Then the individual components just need to declare their row name to match. The
-container element is then free to arrange them differently (even showing them in
-a different order) at different breakpoints. This library is a helper for doing
-exactly that!
+The container element is then free to arrange these rows differently (even
+showing them in a different order) at different breakpoints. All the child
+elements need to do is define their `grid-row` name. This library is a helper
+for doing exactly that!
 
 ## Usage
 
