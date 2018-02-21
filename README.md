@@ -135,6 +135,7 @@ so:
 
 ```css
 .SignUp {
+  display: grid;
   grid-template-rows:
     [twitter] auto
     10px
