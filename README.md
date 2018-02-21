@@ -238,7 +238,7 @@ const foodLayout = css`
 grid layout using `css`:
 
 ```jsx
-import Layout from 'layup/emotion'
+import Layout from 'layup/glamor'
 import { css } from 'glamor'
 
 const foodLayout = css({
