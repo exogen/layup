@@ -11,6 +11,18 @@ from CSS Grid.
 * [glamor][]
 * inline styles – no additional library necessary!
 
+## Install
+
+Currently in beta.
+
+```console
+$ yarn add layup@next
+```
+
+```console
+$ npm install --save layup@next
+```
+
 ## Looks like…
 
 (Using inline styles – but see below for more examples.)
