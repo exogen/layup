@@ -280,7 +280,7 @@ const foodLayout = {
 }} />
 ```
 
-**…with any styling solution:**
+### Adapting to any styling solution
 
 All you need to do is define two components: Grid and Cell. Pass them to the
 `createLayout` function to get your Layout component.
