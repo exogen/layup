@@ -192,6 +192,7 @@ styling solution. Examples follow.
 grid layout using `styled()`:
 
 ```jsx
+import styled from 'styled-components'
 import Layout from 'layup/styled'
 
 const FoodLayout = styled(Layout)`
@@ -215,8 +216,8 @@ const FoodLayout = styled(Layout)`
 using `css`:
 
 ```jsx
-import Layout from 'layup/emotion'
 import { css } from 'emotion'
+import Layout from 'layup/emotion'
 
 const foodLayout = css`
   grid-template-areas:
@@ -238,8 +239,8 @@ const foodLayout = css`
 grid layout using `css`:
 
 ```jsx
-import Layout from 'layup/glamor'
 import { css } from 'glamor'
+import Layout from 'layup/glamor'
 
 const foodLayout = css({
   gridTemplateAreas: `
