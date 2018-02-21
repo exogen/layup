@@ -1,8 +1,13 @@
 {
   "name": "layup",
-  "version": "0.0.0",
+  "version": "0.1.0-0",
   "description": "",
-  "keywords": ["react", "css", "grid", "layout"],
+  "keywords": [
+    "react",
+    "css",
+    "grid",
+    "layout"
+  ],
   "author": "Brian Beck <exogen@gmail.com>",
   "license": "MIT",
   "engines": {
@@ -23,8 +28,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-styled-components": "^1.5.0",
