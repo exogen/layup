@@ -273,7 +273,7 @@ const foodLayout = {
   `
 }
 
-<FoodLayout style={foodLayout} areas={{
+<Layout style={foodLayout} areas={{
   pizza: <Pizza />,
   tacos: <Tacos />,
   ramen: <Ramen />
