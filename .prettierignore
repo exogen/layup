@@ -1,4 +1,6 @@
 .cache
 dist
 dist-*
+docs
 package.json
+package-lock.json

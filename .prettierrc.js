@@ -1,5 +1,13 @@
 module.exports = {
   semi: false,
   singleQuote: true,
-  proseWrap: 'always'
+  proseWrap: 'always',
+  overrides: [
+    {
+      files: ['.*rc'],
+      options: {
+        parser: 'json'
+      }
+    }
+  ]
 }

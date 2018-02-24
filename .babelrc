@@ -1,3 +1,39 @@
 {
-  "presets": ["./.babelrc.js"]
+  "env": {
+    "cjs": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "6"
+            },
+            "modules": "commonjs",
+            "forceAllTransforms": true
+          }
+        ],
+        "react"
+      ]
+    },
+    "esm": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "6"
+            },
+            "modules": false,
+            "forceAllTransforms": true
+          }
+        ],
+        "react"
+      ]
+    }
+  },
+
+  "plugins": [
+    "transform-object-rest-spread",
+    ["styled-components", { "ssr": true }]
+  ]
 }
