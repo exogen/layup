@@ -28,7 +28,7 @@
   "scripts": {
     "build:dist-cjs": "cross-env BABEL_ENV=cjs babel src --out-dir dist-cjs",
     "build:dist-esm": "cross-env BABEL_ENV=esm babel src --out-dir dist-esm",
-    "build:docs": "cross-env BABEL_ENV=esm parcel build docs-src/index.html --out-dir docs --public-url /",
+    "build:docs": "cross-env BABEL_ENV=esm parcel build docs-src/index.html --out-dir docs --public-url /layup",
     "build": "npm run clean && npm run build:dist-cjs && npm run build:dist-esm && npm run build:docs",
     "clean": "rimraf dist-* docs",
     "format": "prettier --write \"**/*.{js,json,md}\" \"**/.*rc\"",
