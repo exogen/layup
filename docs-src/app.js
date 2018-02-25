@@ -9,6 +9,10 @@ injectGlobal`
 
   html {
     font-size: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   body {
@@ -20,6 +24,11 @@ injectGlobal`
     line-height: 1.5;
     color: rgb(62, 61, 56);
     background: rgb(228, 215, 192);
+
+    @media (max-width: 768px) {
+      max-width: 100vw;
+      margin: 0;
+    }
   }
 
   a:link,
@@ -62,6 +71,10 @@ const DocsContainer = styled(Layout)`
     [features] auto
     3rem
     [demo] auto;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
 `
 
 const Title = styled.h1`
@@ -99,6 +112,10 @@ const FeatureList = styled.ul`
   border-radius: 10px;
   font-size: ${18 / 16}rem;
   background: rgba(255, 255, 255, 0.9);
+
+  @media (max-width: 768px) {
+    border-radius: 0;
+  }
 `
 
 const Feature = styled.li`
