@@ -48,7 +48,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
-`;
+`
 
 const DocsContainer = styled(Layout)`
   max-width: 75rem;
@@ -61,7 +61,7 @@ const DocsContainer = styled(Layout)`
     2rem
     [features] auto
     3rem
-    [demo] auto
+    [demo] auto;
 `
 
 const Title = styled.h1`
@@ -112,17 +112,17 @@ const Feature = styled.li`
 const StyledComponents = styled.a.attrs({
   href: 'https://www.styled-components.com/',
   children: 'styled-components'
-})``;
+})``
 
 const Glamor = styled.a.attrs({
   href: 'https://github.com/threepointone/glamor',
   children: 'glamor'
-})``;
+})``
 
 const Emotion = styled.a.attrs({
   href: 'https://emotion.sh/',
   children: 'Emotion'
-})``;
+})``
 
 const DemoLayout = styled(Layout)`
   grid-template-columns: repeat(1, 1fr);
@@ -131,7 +131,7 @@ const DemoLayout = styled(Layout)`
   @media (min-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
-`;
+`
 
 const Food = styled.div`
   padding: 10px;
@@ -211,15 +211,36 @@ class App extends React.Component {
   render() {
     return (
       <DocsContainer rows={['title', 'subtitle', 'features', 'demo']}>
-        <Title><a href="https://github.com/exogen/layup">layup</a></Title>
+        <Title>
+          <a href="https://github.com/exogen/layup">layup</a>
+        </Title>
         <Subtitle>CSS Grid Layout made easy</Subtitle>
         <FeatureList>
           <Feature>Adaptable to any React styling solution</Feature>
-          <Feature>Built-in adapters for <StyledComponents />, <Emotion />, <Glamor />, and inline styles</Feature>
-          <Feature>Uses <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines">named lines and areas</a> from CSS Grid Layout</Feature>
-          <Feature>Say goodbye to <a href="https://github.com/exogen/layup#whats-wrong-with-margin">arbitrary margin overrides</a></Feature>
-          <Feature icon="👉">See the <a href="https://github.com/exogen/layup">README</a> for documentation.</Feature>
-          <Feature icon="👇">The demos below are editable, try them out!</Feature>
+          <Feature>
+            Built-in adapters for <StyledComponents />, <Emotion />, <Glamor />,
+            and inline styles
+          </Feature>
+          <Feature>
+            Uses{' '}
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines">
+              named lines and areas
+            </a>{' '}
+            from CSS Grid Layout
+          </Feature>
+          <Feature>
+            Say goodbye to{' '}
+            <a href="https://github.com/exogen/layup#whats-wrong-with-margin">
+              arbitrary margin overrides
+            </a>
+          </Feature>
+          <Feature icon="👉">
+            See the <a href="https://github.com/exogen/layup">README</a> for
+            documentation.
+          </Feature>
+          <Feature icon="👇">
+            The demos below are editable, try them out!
+          </Feature>
         </FeatureList>
         <DemoLayout>
           <LiveProvider code={areasCode} scope={scope} noInline>
