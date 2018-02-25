@@ -114,6 +114,8 @@ const FeatureList = styled.ul`
   background: rgba(255, 255, 255, 0.9);
 
   @media (max-width: 768px) {
+    max-width: none;
+    margin: 0;
     border-radius: 0;
   }
 `
