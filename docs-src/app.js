@@ -73,6 +73,14 @@ const Title = styled.h1`
     margin-right: 0.6rem;
     vertical-align: -0.1rem;
   }
+
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    color: inherit;
+    border: inherit;
+  }
 `
 
 const Subtitle = styled.h2`
@@ -203,7 +211,7 @@ class App extends React.Component {
   render() {
     return (
       <DocsContainer rows={['title', 'subtitle', 'features', 'demo']}>
-        <Title>layup</Title>
+        <Title><a href="https://github.com/exogen/layup">layup</a></Title>
         <Subtitle>CSS Grid Layout made easy</Subtitle>
         <FeatureList>
           <Feature>Adaptable to any React styling solution</Feature>

@@ -13,14 +13,12 @@ from CSS Grid.
 
 ## Install
 
-Currently in beta.
-
 ```console
-$ yarn add layup@next
+$ yarn add layup
 ```
 
 ```console
-$ npm install --save layup@next
+$ npm install --save layup
 ```
 
 ## Looks like…
