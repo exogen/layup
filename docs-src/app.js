@@ -14,7 +14,7 @@ injectGlobal`
   body {
     margin: 12px;
     padding: 0;
-    border: 6px solid rgb(173, 0, 0);
+    border: 6px solid rgb(218, 97, 85);
     font-family: Lato, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -102,9 +102,16 @@ const FeatureList = styled.ul`
 `
 
 const Feature = styled.li`
+  position: relative;
+  padding-left: 2rem;
+
   &:before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    min-width: 1.25em;
+    text-align: center;
     content: '${props => props.icon || '✔︎'}';
-    margin-right: 0.5rem;
     color: rgb(14, 135, 84);
   }
 `
