@@ -166,13 +166,11 @@ const areasCode = `const FoodLayout = styled(Layout)\`
 \`
 
 render(
-  <FoodLayout
-    areas={{
-      pizza: <Pizza />,
-      tacos: <Tacos />,
-      ramen: <Ramen />
-    }}
-  />
+  <FoodLayout areas={{
+    pizza: <Pizza />,
+    tacos: <Tacos />,
+    ramen: <Ramen />
+  }} />
 )
 `
 
@@ -189,13 +187,11 @@ const rowsCode = `const FoodLayout = styled(Layout)\`
 \`
 
 render(
-  <FoodLayout
-    rows={{
-      pizza: <Pizza />,
-      tacos: <Tacos />,
-      ramen: <Ramen />
-    }}
-  />
+  <FoodLayout rows={{
+    pizza: <Pizza />,
+    tacos: <Tacos />,
+    ramen: <Ramen />
+  }} />
 )
 `
 
