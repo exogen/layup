@@ -12,7 +12,7 @@ injectGlobal`
   }
 
   body {
-    margin: 6px;
+    margin: 12px;
     padding: 0;
     border: 6px solid rgb(173, 0, 0);
     font-family: Lato, Helvetica, sans-serif;
