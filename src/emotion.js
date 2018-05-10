@@ -7,6 +7,7 @@
  * (In theory this file could be exactly the same as the one for glamor, but I
  * used tagged template literals instead of objects.)
  */
+import React from 'react'
 import { css } from 'emotion'
 import createLayout from './createLayout'
 

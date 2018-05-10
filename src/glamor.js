@@ -4,6 +4,7 @@
  *
  * Components that make up the grid must support a `className` prop.
  */
+import React from 'react'
 import { css } from 'glamor'
 import createLayout from './createLayout'
 

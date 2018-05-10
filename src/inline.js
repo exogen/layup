@@ -3,6 +3,7 @@
  *
  * Components that make up the grid must support a `style` prop.
  */
+import React from 'react'
 import createLayout from './createLayout'
 
 export function Grid({ style, children, ...props }) {
